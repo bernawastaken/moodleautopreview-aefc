@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "MoodleAutoPreview",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Views compatible files on moodle server instead of downloading",
   "icons": {
-    "48": "icons/icon.svg",
-    "98": "icons/icon.svg"
+    "48": "icons/icon.png",
+    "98": "icons/icon2x.png"
   },
   "author": "blohshyboi",
   "homepage_url": "https://github.com/bernawastaken",
@@ -17,7 +17,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.aefcastro.net/moodle/*"],
+      "matches": ["http://www.aefcastro.net/moodle/*", "http://www.aefcastro.net/moodle20/*"],
       "js": ["autopreview.js"]
     }
   ]
